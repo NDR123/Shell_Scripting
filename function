@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# Author         : Emertxe (http://www.emertxe.com) 
+# Date           : Tue 16 Feb 2016 16:27:07 IST
+# File           : ls_013_02_ch6_function.sh
+# Title          : Functions - Arguments
+# Description    : A script to show the usage of function and how to pass arguments
+#
+
+# Function definition
+function find_sum()
+{
+    SUM=`expr $1 + $2`
+    echo $SUM
+}
+
+# Pass arguments 10 and 20 to find_sum function
+find_sum 10 20
+
+# Save the output of function in a variable
+RESULT=`find_sum 100 200`
+echo $RESULT
